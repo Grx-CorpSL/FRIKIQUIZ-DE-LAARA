@@ -1,0 +1,77 @@
+/* Contenedor principal del quiz */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* Contenedor del muñeco animado */
+.personaje-container {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Texto de la pregunta */
+#pregunta {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 20px auto;
+  max-width: 800px;
+  color: #111827;
+  text-align: center;
+}
+
+/* Contenedor de las opciones */
+.opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+/* Botones de opciones */
+.opciones button {
+  padding: 12px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.opciones button:hover {
+  background-color: #45a049;
+}
+
+/* Resultado final */
+.resultado {
+  font-size: 1.3em;
+  margin-top: 30px;
+  color: #e60000;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Contenedor para animaciones de baile */
+.bailes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Adaptación responsive para móviles */
+@media screen and (max-width: 600px) {
+  .opciones {
+    width: 90%;
+  }
+}
